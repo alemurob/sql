@@ -54,7 +54,12 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Slowly changing dimensions (SCDs) come in two varieties, SCD Type 1 which overwrite existing data with new values, and SCD Type 2 keeps a history of changes and instead adding a new row for each change.
+
+For keeping customer addresses both varieties could be applied each with their respective strengths and weaknesses. The SCD Type 1 option would be useful for keeping a record of the latest customer addresses and updating these records when needed (e.g. after customer address change). An example design could be: customerID, customerName, customerStreetAddress, customerCity, CustomerProvince, CustomerCountry, CustomerPostalCode. And all columns would contain text format data.
+
+The SDC Type 2 option would be helpful for keeping a history of customer addresses and therefore would need additional columns (e.g. dates) to keep track of current and previous customer addresses. The latter option may be useful for analyzing/tracking trends, and for auditing purposes. An example design would be the same as above with the following additional columns: StartDate, EndDate, IsCurrent. The date columns would hold date format data and the last column would be logical (True/False). The EndDate column could contain a NULL value in entries where this value is not applicable.
+
 ```
 
 ***
@@ -183,5 +188,6 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+The article discusses the shortcomings of artifical intelligence (AI) and importance of the human user in thoughtful and useful design. The author discusses this through various examples including real-world stories and articles from other authors. An important concept mentioned was how AI models are susceptible to human bias introduced during training. For example, in discussion of the origins of ImageNet, researchers at Princeton had to consider how to improve training data considering human biases and incentives. This project led to the creation of a large correctly labeled dataset which the author describes as a gold standard for AI research. Importantly, the design of the project was made possible through tedious manual compilations and projects designed by other groups which each involved a significant amount of human input as well. Overall, the author makes a strong argument about the significance of human input in AI and concludes the article with mentions of cutting-edge initiatives across other domains. One of the prevailing themes of this article is the challenge of ethical model design which often comes at a significant cost - something that may not always be prioritized in business contexts where profitability is the primary motivation. Since the publication of this article several years ago the AI field has undergone vast leaps leading to large-scale and industrial applications of AI technologies like large language models (LLMs) which have quickly a high degree of adoption. While these emerging technologies have resolved an infinite number of practical challenges and improved efficiency for everyday users, their proliferation has introduced new ethical challenges and concerns related to bias, moderation, public health and more. With less user oversight, the risk of dessemination of inaccurate information, potentially harmful content and more. When considering this all it can be seen how inadequate regulation can lead to unintended harm and damage. This underscores the need for strong oversight, government regulation and legal determinations at all levels to curb these risks and minimize risks for society. If carefully harnessed this technology is sure to change the world and how society functions at all levels.
+
 ```

@@ -14,10 +14,10 @@
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-one`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [X] Create a branch called `assignment-one`.
+- [X] Ensure that the repository is public.
+- [X] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [X] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
 
@@ -205,5 +205,6 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+The article demonstrates how despite modern conventions in optimal data storage and management, even robust systems may be prone to limitations caused by human design shortfalls and possible biases. The article specifically addresses this in the context of Computerized National ID Cards (CNICs) in Pakistan, highlighting the potential implications of these limitations on quality of life for data users/consumers. The article also contextualizes the problem within Pakistan's history and the motivations for establishing the CNIC system based on a "statistical database of people in the country". With this it is also shown how adaptation is a natural component of technological progress as even the most thought out designs can be subject to challenges ih a fast growing world. Whether its dynamic political upheavals, social revolutions, demographic changes or otherwise. At the intersection of this, are multi-discplinary studies undertaken by experts in fields like anthropology which may undertake studies focusing on understanding the human dimension (or other components) using unique research methodologies to enhance the existing knowledge base. The implication is an increased capacity to assess effectiveness of past and current systems - their strengths, their challenges and their developmental trajectories. Taken together, these broad perspectives may inform ongoing technological innovation, development and evolution of large-scale data initiatives both in private and public domains. And importantly, ongoing ethical considerations and regulation at local, national, and international levels.
+
 ```
